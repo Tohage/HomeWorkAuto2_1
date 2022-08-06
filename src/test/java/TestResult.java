@@ -10,14 +10,14 @@ public class TestResult {
 // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("PostmanTest") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("Postman") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("PostmanTest"))
+                .body("data", equalTo("Postman"))
         ;
     }
 
